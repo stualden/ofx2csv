@@ -3,7 +3,6 @@
 Convert OFX to CSV
 
 ## Purpose
-git remote add origin git@github.com:keeth/ofx2csv.git
 This package is intended to help merge and normalize one or more QFX/OFX files (Quicken/Quickbooks) into CSV for import into a spreadsheet.
 
 CSV export formats tend to vary between financial institutions and financial applications. Quicken exports have a consistent format, but are obviously not directly importable into a spreadsheet program.
