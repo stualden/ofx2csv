@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ofx2csv"
+version = "0.1.0"
+description = ""
+authors = ["Keith Grennan <keith@nearlyfree.org>"]
+readme = "README.md"
+packages = [{include = "ofx2csv", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ofxparse = "^0.21"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ofx2csv = "ofx2csv.cli:main"
