@@ -3,7 +3,7 @@
 Convert OFX to CSV
 
 ## Purpose
-
+git remote add origin git@github.com:keeth/ofx2csv.git
 This package is intended to help merge and normalize one or more QFX/OFX files (Quicken/Quickbooks) into CSV for import into a spreadsheet.
 
 CSV export formats tend to vary between financial institutions and financial applications. Quicken exports have a consistent format, but are obviously not directly importable into a spreadsheet program.
@@ -22,8 +22,8 @@ ofx2csv [-h] [-o overrides.json] [-a accounts.csv] [-t transactions.csv] tag1:fi
 
 ```python
 converter = Ofx2Csv()
-converter.add_ofx("bank", "tests/data/bank.qfx")
-converter.add_ofx("cc", "tests/data/cc.qfx")
+converter.add_ofx("mybank", "bank_transactions.qfx")
+converter.add_ofx("myvisa", "visa_statement.qfx")
 converter.write_accounts(csv.writer(open("accounts.csv", "w")))
 converter.write_transactions(csv.writer(open("transactions.csv", "w")))
 ```
