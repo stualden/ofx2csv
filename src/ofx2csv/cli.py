@@ -8,10 +8,10 @@ from ofx2csv import Ofx2Csv
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-o",
-        "--overrides",
+        "-j",
+        "--adjustments",
         type=argparse.FileType("r"),
-        help="Optional overrides JSON file",
+        help="Optional adjustments JSON file",
     )
     parser.add_argument(
         "-a",
