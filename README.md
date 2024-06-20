@@ -18,7 +18,11 @@ Accounts are assigned unique nicknames for easy reference.
 Command line interface
 
 ```bash
-ofx2csv [-h] [-j adjustments.json] [-a accounts-out.csv] [-t transactions-out.csv] nickname1:file1.ofx [nickname2:file2.ofx ...]
+ofx2csv [-h] \
+ [-j adjustments.json] \
+ [-a accounts-out.csv] \
+ [-t transactions-out.csv] \
+ nickname1:file1.ofx [nickname2:file2.ofx ...]
 ```
 
 Python interface
