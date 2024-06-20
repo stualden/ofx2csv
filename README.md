@@ -31,9 +31,9 @@ converter.write_accounts(csv.writer(open("accounts-out.csv", "w")))
 converter.write_transactions(csv.writer(open("transactions-out.csv", "w")))
 ```
 
-## Overrides
+## Adjustments
 
-Sometimes you need to apply adjustments to the data. For example, you might want to change the date of a transaction or exclude it from the import.
+Sometimes you need to apply adjustments to the data before you import it. For example, you might want to change the date of a transaction or exclude it from the import.
 
 To do this, you can maintain set of adjustments for specific transactions. Use the account nickname and the transaction ID to adjust one or more properties, or to exclude it. This file can be passed to ofx2csv with the `-j` option, or passed in as a `dict` to the `Ofx2Csv` constructor.
 
