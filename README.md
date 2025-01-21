@@ -4,6 +4,7 @@ Convert OFX to CSV
 
 SHA - Customize for manipulating files downloaded from Citizens
 
+Here is another line of text, just to make sure git is working properly for me!!!
 
 ## Purpose
 This package is intended to help merge and normalize one or more QFX/OFX files (Quicken/Quickbooks format) into CSV for import into a spreadsheet.
